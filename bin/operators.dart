@@ -2,13 +2,13 @@ void main(){
    var a = 13;
    var b = 9;
    /// Arithmetic Operator
-   print("sum = ${a+b}");
-   print("sub = ${a-b}");
-   print("mul = ${a*b}");
-   print("div = ${a/b}");
-   print("tdiv = ${a~/b}"); // Tilt division
-   print("udiv = ${a%b}");  // unary division
-   print("umin = ${-(a+b)}"); //unary min
+   print("sum = ${a+b}");     // Addition
+   print("sub = ${a-b}");     // Subtraction
+   print("mul = ${a*b}");     // Multiplication
+   print("div = ${a/b}");     // Division
+   print("tdiv = ${a~/b}");   // Tilt division
+   print("udiv = ${a%b}");    // unary division
+   print("umin = ${-(a+b)}"); // unary min
 
    /// Assignment Operator
    int c = 18;
@@ -78,5 +78,35 @@ void main(){
    var e = 12;
    var largest = d > e ? "d is greater" : "d is not greater";
    print(largest);
+
+   var f = 815;
+   var g = 280;
+   var h = 200;
+   var largest1 = f > g ? "f is greater " :  g > h ? "g is grater" : "h is greater";
+   print(largest1);
+
+   var n1 =10, n2 =20, n3 = 30;
+   var large = n1 > n2 ? ( n1 > n3 ? '$n1 is greater' : '$n3 is greater' ) : ( n2 > n3 ? '$n2 is greater' : '$n3 is greater' );
+   print(large);
+
+   print("Bitwise Operator"); // & | ^
+   int n = 10; //0000 1010
+   int m = 15; //0000 1111
+   /// n & m = 0000 1010 =10
+   /// n | m = 0000 1111 = 15
+   /// n ^ m = 0000 0101 = 5
+   print(n & m);
+   print(n | m);
+   print(n ^ m);
+
+   print("Shift Operator"); // >>  <<
+
+   print(n >> 2); // 0000 1010 => 0000 0010 = 2
+   print(n << 2); // 0000 1010 => 0010 1000 = 40
+
+   print("Null Aware"); /// '??' is null aware
+   String? name;
+   var result = name?.length ?? "name may or may not ne null";
+   print(result);
 
 }

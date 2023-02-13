@@ -13,7 +13,7 @@ class Bank{
   }
   void fd(){
     int fd = 600000;
-    print('FD for 5 years with amound $fd');
+    print('FD for 5 years with amount $fd');
   }
 
 }
